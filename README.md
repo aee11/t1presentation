@@ -1,6 +1,6 @@
-# t1presentation
+# Presentation for the Tb cluster
 
-# Setup
+## Setup
 
 - `git clone https://github.com/aee11/t1presentation`
 - `npm install`
