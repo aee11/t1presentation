@@ -2,7 +2,7 @@
 
 ## Setup
 
-- `git clone https://github.com/aee11/t1presentation`
+- `git clone https://github.com/aee11/tbPresentation`
 - `npm install`
 - `bower install`
 - `grunt serve` to view slides
