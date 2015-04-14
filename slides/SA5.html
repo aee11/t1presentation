@@ -1,0 +1,25 @@
+<h2>FLights.db Schema</h2>
+
+<pre><code>CREATE TABLE Flights (
+        flightNumber integer not null,
+        airline text not null,
+        departureTime text not null,
+        arrivalTime text,
+        departureLocation text,
+        arrivalLocation text,
+        price integer check (price >= 0),
+        seatsAvailable integer check (seatsAvailable >= 0),
+        primary key (flightNumber, airline, departureTime));</code></pre>
+<pre><code>CREATE TABLE Passengers (
+        bookingId integer references Bookings(bookingId),
+        name text);</code></pre>
+<pre><code>CREATE TABLE Bookings (
+        bookingId integer primary key autoincrement,
+        email text);</code></pre>
+<pre><code>CREATE TABLE BookedFlights (
+        bookingId integer references Bookings(bookingId),
+        airline text,
+        flightNumber integer,
+        departureTime text,
+        foreign key (airline, flightNumber, departureTime) 
+        references Flights(airline, flightNumber, departureTime));</code></pre>

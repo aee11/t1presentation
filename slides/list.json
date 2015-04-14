@@ -1,1 +1,22 @@
-["index.md"]
+[
+    "index.md",
+    "live-demo.html",
+    [
+    	"system-architecture.html",
+        "SA1.html",
+        "SAseq1.html",
+        "SAseq2.html",
+        "SA2.html",
+        "SA3.html",
+        "SA4.html",
+        "SA5.html"
+
+    ],
+    [
+    	"retrospective.html",
+    	"RS1.html",
+    	"RS2.html",
+    	"RS3.html",
+    	"RS4.html"
+    ]
+]

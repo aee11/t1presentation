@@ -1,0 +1,25 @@
+<h2>Hotels.db Schema</h2>
+
+<pre><code>CREATE TABLE "Hotels" (
+	`hotelnames`	TEXT,
+	`location`	TEXT,
+	`rating`	INTEGER,
+	`wifi`		TEXT,
+	`roomPrice`	INTEGER
+);</code></pre>
+<pre><code>CREATE TABLE "Booking" (
+	`name`		TEXT,
+	`email`		TEXT,
+	`phone`		TEXT,
+	`numberofrooms`	INTEGER,
+	`hotel`		TEXT,
+	`totalprice`	INTEGER,
+	`checkin`	TEXT,
+	`checkout`	TEXT
+);</code></pre>
+<pre><code>CREATE TABLE "Available" (
+		`hotel`		TEXT,
+		`date`		TEXT,
+		`roomsAvail`	INTEGER,
+		PRIMARY KEY(hotel,date)
+);</code></pre>
